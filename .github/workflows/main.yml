@@ -30,5 +30,5 @@ jobs:
 
       - name: Removal of unnecessary attributes
         run: |
-          python -c "from script import remove_attributes() ; print(remove_attributes())"
+          python -c "from script import remove_attributes; print(remove_attributes())"
                     
