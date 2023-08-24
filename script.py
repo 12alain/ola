@@ -25,4 +25,4 @@ def data_cleaned():
     # Traitement des valeurs dupliquées
     datas.drop_duplicates(inplace=True)
     datas.to_csv('./data/cleaned/data_cleaned.csv')
-    return datas 
+    return data_cleaned.csv
