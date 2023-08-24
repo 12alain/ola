@@ -27,4 +27,8 @@ jobs:
       - name: data_cleaned 
         run: |
           python -c "from script import data_cleaned ; print(data_cleaned())"
-            
+
+      - name: Removal of unnecessary attributes
+        run: |
+          python -c "from script import remove_attributes() ; print(remove_attributes())"
+                    

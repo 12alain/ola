@@ -26,3 +26,19 @@ def data_cleaned():
     datas.drop_duplicates(inplace=True)
     datas.to_csv('./data/cleaned/data_cleaned.csv')
     return datas
+  
+def remove_attributes():
+    # Load the data using the download_data() function
+   
+    data=pd.read_csv('./data/cleaned/data_cleaned.csv',sep=";")
+    # List of attributes that are not needed
+    cols_to_remove = ['length', 'margin_up']
+
+    # Loop through the columns to remove
+    for col in cols_to_remove:
+        # Drop the specified column from the DataFrame
+        data.drop([col], axis=1, inplace=True)
+
+    # Return the modified data after attribute removal
+    return data
+
