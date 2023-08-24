@@ -1,1 +1,2 @@
-#  fichier contenant la liste des dépendances du projets.
+pandas
+request
